@@ -1,0 +1,36 @@
+nav{
+    background: rgba(0, 0, 0, .3);
+    width: 100%;
+    display: block;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    display: flex;
+    backdrop-filter: blur(15px);
+    justify-content: space-around;
+}
+
+.nav__menu{
+    background: transparent;
+    display: flex;
+    font-size: 1.1rem;
+    align-items: center;
+}
+.nav__menu a{
+    padding: .5rem;
+    gap: 2rem;
+    color: var(--color-light);
+
+}
+.nav__menu a:hover{
+    color: var(--color-primary);
+    background: var(--color-bg);
+}
+
+nav a img{
+    object-fit: contain;
+    border-radius: 0;
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: .5rem;
+}

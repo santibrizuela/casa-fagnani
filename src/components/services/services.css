@@ -1,0 +1,58 @@
+section h5{
+    color: var(--color-primary)!important;
+    text-align: center;
+}
+
+section h3{
+    color: var(--color-primary);
+    text-align: center;
+}
+
+.services__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    background-color: var(--color-primary);
+}
+
+.service{
+    border-radius: 2.1rem;
+    height: fit-content;
+    margin: 2rem;
+}
+
+.service__head{
+    text-align: center;
+    margin: 1rem;
+}
+
+.service__icon{
+    font-size: 5rem;
+    text-align: center;
+    left: 50%;
+}
+
+.service__head h2{
+    color: var(--white);
+}
+
+
+/*========= MEDIA QUERIES (MEDIUM) =================*/
+@media screen and (max-width: 1024px) {
+    .services__container{
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .service{
+        height: auto;
+    }
+}
+ 
+ /*========= MEDIA QUERIES (SMALL) =================*/
+ @media screen and (max-width: 600px) {
+     .services__container{
+         grid-template-columns: 1fr;
+         gap: 1.5rem;
+     }
+}
